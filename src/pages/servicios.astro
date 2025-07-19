@@ -1,0 +1,62 @@
+---
+// Reutilizamos la cabecera y el pie de página importándolos
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Servicios - Orange Tecnología</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <Header />
+
+  <main class="container mx-auto px-6 py-16">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">Nuestros Servicios y Productos</h1>
+      <p class="mt-4 text-lg text-gray-600">Soluciones integrales para potenciar tu infraestructura tecnológica.</p>
+    </div>
+
+    <section class="mt-16">
+      <h2 class="text-3xl font-bold border-l-4 border-orange-500 pl-4">Soporte Especializado</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="font-bold text-xl">Soporte en Redes de Datos</h3>
+          <p class="mt-2 text-gray-600">Mantenimiento, diagnóstico y optimización de tu infraestructura de red para garantizar máxima disponibilidad y rendimiento.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="font-bold text-xl">Soporte en Servidores y Bases de Datos</h3>
+          <p class="mt-2 text-gray-600">Administración proactiva y soporte reactivo para tus servidores y sistemas de bases de datos, asegurando la integridad y acceso a tu información.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <h2 class="text-3xl font-bold border-l-4 border-orange-500 pl-4">Venta de Hardware</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="font-bold text-xl">Equipos de Oficina</h3>
+          <p class="mt-2 text-gray-600">Proveemos y configuramos computadores, impresoras, escáneres y periféricos de las mejores marcas para equipar tu entorno de trabajo.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="font-bold text-xl">Productos de Redes de Datos</h3>
+          <p class="mt-2 text-gray-600">Venta de switches, routers, firewalls y puntos de acceso para construir o actualizar una red segura y eficiente.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+
+</body>
+</html>

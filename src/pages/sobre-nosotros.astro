@@ -1,0 +1,45 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Sobre Nosotros - Orange Tecnología</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <Header />
+
+  <main class="container mx-auto px-6 py-16">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">Tu Socio Estratégico en Tecnología</h1>
+      <p class="mt-4 text-lg text-gray-600">Comprometidos con el éxito y la eficiencia de tu empresa.</p>
+    </div>
+
+    <div class="mt-16 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold">Nuestra Misión</h2>
+      <p class="mt-4 text-gray-700 leading-relaxed">En Orange Tecnología, nuestra misión es ofrecer soluciones tecnológicas robustas y confiables que permitan a nuestros clientes operar con seguridad y eficiencia. Actuamos como una extensión de tu equipo, brindando el soporte y la tecnología necesarios para que puedas enfocarte en hacer crecer tu negocio.</p>
+
+      <h2 class="text-2xl font-bold mt-12">¿Por Qué Elegirnos?</h2>
+      <ul class="mt-4 space-y-4 text-gray-700">
+        <li><strong>✔ Experiencia Comprobada:</strong> Contamos con un equipo de profesionales con amplia experiencia en el sector.</li>
+        <li><strong>✔ Enfoque en el Cliente:</strong> Entendemos tus necesidades y nos adaptamos a ellas, ofreciendo soluciones a la medida.</li>
+        <li><strong>✔ Calidad y Confianza:</strong> Trabajamos con las mejores marcas y seguimos las mejores prácticas para garantizar resultados de alta calidad.</li>
+      </ul>
+    </div>
+  </main>
+
+  <Footer />
+
+</body>
+</html>
