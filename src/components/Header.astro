@@ -3,6 +3,7 @@
     <a href="/" class="font-bold text-xl text-orange-500">
       Orange Tecnología
     </a>
+
     <div class="hidden md:flex items-center space-x-6">
       <a href="/" class="text-gray-600 hover:text-orange-500">Inicio</a>
       <a href="/servicios" class="text-gray-600 hover:text-orange-500">Servicios</a>
@@ -11,5 +12,32 @@
         Contacto
       </a>
     </div>
+
+    <div class="md:hidden">
+      <button id="mobile-menu-button" class="text-gray-800 hover:text-orange-500 focus:outline-none">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
   </nav>
+
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+    <a href="/" class="block py-2 px-6 text-sm text-gray-800 hover:bg-gray-50">Inicio</a>
+    <a href="/servicios" class="block py-2 px-6 text-sm text-gray-800 hover:bg-gray-50">Servicios</a>
+    <a href="/sobre-nosotros" class="block py-2 px-6 text-sm text-gray-800 hover:bg-gray-50">Sobre Nosotros</a>
+    <a href="/contacto" class="block py-2 px-6 text-sm text-gray-800 hover:bg-gray-50">Contacto</a>
+  </div>
 </header>
+
+<script>
+  // Selecciona el botón y el panel del menú
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  // Agrega un evento para 'click' en el botón
+  mobileMenuButton.addEventListener('click', () => {
+    // Muestra u oculta el panel del menú
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
