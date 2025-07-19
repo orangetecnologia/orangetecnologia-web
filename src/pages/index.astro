@@ -1,20 +1,28 @@
+---
+// Importamos los componentes reutilizables
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Orange Tecnología - Soluciones Tecnológicas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+
 <body class="bg-white text-gray-800">
 
-  <header class="bg-white shadow-sm sticky top-0 z-50">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="font-bold text-xl text-orange-500">
-        Orange Tecnología
-      </div>
-      <div class="hidden md:flex items-center space-x-6">
-        <a href="#" class="text-gray-600 hover:text-orange-500">Inicio</a>
-        <a href="#" class="text-gray-600 hover:text-orange-500">Servicios</a>
-        <a href="#" class="text-gray-600 hover:text-orange-500">Sobre Nosotros</a>
-        <a href="#" class="bg-orange-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-orange-600 transition-colors">
-          Contacto
-        </a>
-      </div>
-    </nav>
-  </header>
+  <Header />
 
   <main class="container mx-auto px-6 py-24 text-center">
     <h1 class="text-4xl md:text-6xl font-bold leading-tight">
@@ -23,7 +31,7 @@
     <p class="mt-4 text-lg text-gray-600">
       Expertos en integración y soporte para llevar tu empresa al siguiente nivel.
     </p>
-    <a href="#" class="mt-8 inline-block bg-orange-500 text-white font-bold text-lg py-3 px-8 rounded-lg hover:bg-orange-600 transition-colors">
+    <a href="/servicios" class="mt-8 inline-block bg-orange-500 text-white font-bold text-lg py-3 px-8 rounded-lg hover:bg-orange-600 transition-colors">
       Ver Nuestros Servicios
     </a>
   </main>
@@ -54,20 +62,7 @@
     </div>
   </section>
 
-  <footer class="bg-gray-800 text-white">
-    <div class="container mx-auto px-6 py-8 text-center">
-      <p class="font-bold text-lg text-orange-500">Orange Tecnología</p>
-      <p class="mt-2 text-gray-400">juancarlososorio@orangetecnologia.com | +57 300 885 79 46</p>
-      <p class="mt-4 text-sm text-gray-500">&copy; 2025 Orange Tecnología. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-</body>
+  <Footer />
 
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<style>
-  body { font-family: 'Open Sans', sans-serif; }
-  h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
-</style>
+</body>
+</html>
